@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de Capilares {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">Listar Capilares</div>
+    <a
+        name=""
+        id=""
+        class="btn btn-success"
+        href="{% url 'crear_capilares' %}"
+        role="button"
+        >Agregar nuevo shampoo</a
+    >
+    
+    <div class="card-body">
+        <h4 class="card-title">Capilares</h4>
+        <div
+            class="table-responsive"
+        >
+            <table
+                class="table table-primary"
+            >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>Descripcion</th>
+                        <th>Acciones</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>Biferdil</td>
+                        <td>1007</td>
+                        <td>imagen.jpg</td>
+                        <td>shampoo</td>
+                        <td>Editar / Borrar </td>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+
+
+
+
+
+
+
+       
+    </div>
+    <div class="card-footer text-muted"></div>
+</div>
+
+
+{% endblock %}

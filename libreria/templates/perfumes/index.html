@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block titulo %} Lista de Perfumes {% endblock %}
+
+{% block contenido %} 
+
+<div class="card">
+    <div class="card-header">Listar perfumes</div>
+    <a
+        name=""
+        id=""
+        class="btn btn-success"
+        href="{% url 'crear_perfume' %}"
+        role="button"
+        >Agregar nuevo perfume</a
+    >
+    
+    <div class="card-body">
+        <h4 class="card-title">Perfumes</h4>
+        <div
+            class="table-responsive"
+        >
+            <table
+                class="table table-primary"
+            >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>Descripcion</th>
+                        <th>Acciones</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>Azzaro</td>
+                        <td>Wanted</td>
+                        <td>imagen.jpg</td>
+                        <td>Amaderado-Ambarado</td>
+                        <td>Editar / Borrar </td>
+
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+
+
+
+
+
+
+
+       
+    </div>
+    <div class="card-footer text-muted"></div>
+</div>
+
+
+{% endblock %}
