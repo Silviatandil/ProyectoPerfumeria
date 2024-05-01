@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import perfume, maquillaje, skinCare, capilar, accesorio
 
 def inicio(request):
     return render(request,'paginas/inicio.html')
@@ -9,7 +10,9 @@ def nosotros(request):
 
 #registrar los accesos para poder acceder
 def Perfumes(request):
-    return render(request, 'perfumes/index.html')
+    perfumes = perfume.objects.all()
+    return render(request, 'perfumes/index.html', {'perfumes': perfumes})
+
 def crear_perfume(request):
     return render(request, 'perfumes/crear.html')
 def maquillaje(request):

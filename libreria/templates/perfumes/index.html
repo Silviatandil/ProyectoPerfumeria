@@ -23,30 +23,33 @@
             <table
                 class="table table-primary"
             >
+
+           
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Marca</th>
-                        <th>Nombre</th>
-                        <th>Imagen</th>
-                        <th>Descripcion</th>
-                        <th>Acciones</th>
-
+                        <td>Nombre</td>
+                        <td>Imagen</td>
+                        <td>Descripcion</td>
+                        <td></td>
                     </tr>
+                    
                 </thead>
                 <tbody>
-                    <tr class="">
-                        <td>1</td>
-                        <td>Azzaro</td>
-                        <td>Wanted</td>
-                        <td>imagen.jpg</td>
-                        <td>Amaderado-Ambarado</td>
+                    {% for perfume in perfumes %}
+                    <tr>
+                        <td>{{ perfume.id}}</td>
+                        <td>{{ perfume.marca}}</td>
+                        <td>{{ perfume.nombre}}</td>
+                        <td>{{ perfume.imagen}}</td>
+                        <td>{{ perfume.descripcion}}</td>
                         <td> 
                             <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>
                             <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a>
                         </td>
-
                     </tr>
+                    {% endfor %}
                     
                 </tbody>
             </table>
