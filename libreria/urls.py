@@ -15,5 +15,5 @@ urlpatterns = [
     path('perfumes/crear_skinCare', views.crear_skinCare, name="crear_skinCare"),
     path('accesorios', views.accesorios, name="accesorios"),
     path('perfumes/crear_accesorios', views.crear_accesorios, name="crear_accesorios"),
-
+    path('perfumes/editar', views.editar, name="editar"),
 ]

@@ -28,4 +28,6 @@ def accesorios(request):
     return render(request, 'perfumes/accesorios.html')
 def crear_accesorios(request):
     return render(request, 'perfumes/crear_accesorios.html')
+def editar(request):
+    return render(request, 'perfumes/editar.html')
 

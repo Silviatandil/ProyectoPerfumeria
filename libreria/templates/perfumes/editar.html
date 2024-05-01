@@ -4,6 +4,18 @@
 
 {% block contenido %} 
 
-Formulario para editar Perfume 
+<div class="card">
+    <div class="card-header">
+        Editar informacion del  perfume
+    </div>
+        
+    <div class="card-body">
+        <h4 class="card-title">Datos del Perfume</h4>
+        {% include 'perfumes/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+</div>
+
 
 {% endblock %}

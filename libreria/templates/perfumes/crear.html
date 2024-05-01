@@ -4,6 +4,19 @@
 
 {% block contenido %} 
 
-Formulario para agregar nuevo perfume
+<div class="card">
+    <div class="card-header">
+        Crear un perfume
+    </div>
+        
+    <div class="card-body">
+        <h4 class="card-title">Datos del Perfume</h4>
+        {% include 'perfumes/form.html' %}
+
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+</div>
+
+
 
 {% endblock %}
